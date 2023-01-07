@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cz">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="ikona" href="ikona.png" >
+
+
+
+
+<title>zuby zkouška</title>
+
+<style>
+
+@media print{
+	footer {page-break-before:always;
+	}
+	nav{display: none;page-break-before:always;page-break-after:always;
+	}
+}
+
+@media screen and (max-width: 520px) {
+    	header{max-width: 100%; height: auto; margin: 10px; font-size: 5px;
+	}
+	nav{max-width: 100%; height: auto; margin: 10px; font-size: 10px;
+	}
+	main{max-width: 100%; height: auto; margin: 10px; font-size: 8px; font-weight: normal;
+	}
+	footer{max-width: 100%; height: auto; margin: 10px; font-size: 10px;
+	}
+	ul{max-width: 100%; height: auto; margin: 10px; font-size: 10px;
+	}
+	p{max-width: 100%; height: auto; margin: 10px; font-size: 10px; padding: 10px; font-weight: normal;
+	}
+	img{max-width: 100%; height: auto; margin: 5px;
+	}
+	.demo{display: flex; flex-direction: column; flex-wrap: wrap ;
+	}
+}
+
+a:link	{color:#000000  ;}
+a:visited	{color:#0000cd  ;}
+a:hover	{color:#808080  ;}
+
+header{background-color:#1C7CFF  ;background-image: url(https://images.pexels.com/photos/7195441/pexels-photo-7195441.jpeg?auto=compress&cs=tinysrgb&w=600) ;
+background-repeat: no-repeat;background-position: center ; padding: 40px;
+margin-top: 5px; margin-bottom: 5px;
+
+}
+
+h1{color: #000000 ;background-color:#ffffff ;opacity:0.6 ; white-space: nowrap; overflow: hidden ; text-align: center;
+}
+nav{background-color:#1AA7E8; text-align:center; font-size:24px; 
+margin-top: 5px; margin-bottom: 5px; padding: 10px;  
+}
+nav a{ text-decoration: none ; padding: 10px 
+}
+nav ul{ list-style-type: none ;
+}
+nav li{ display: inline
+}
+
+#br{clear: both;
+}
+
+
+main{background-color:#2AF3FF; margin-top: 5px; margin-bottom: 5px;
+}
+footer{background-color:#1AE8B9; text-align: center ; 
+margin-top: 5px; margin-bottom: 5px;
+}
+footer a {text-decoration: none; padding: 10px; margin: 10px
+}
+footer ul{ list-style-type: none;
+}
+
+img{max-width: 100%; height: auto; margin: 10px
+}
+
+.center{font-weight:bold; text-decoration:none;  
+}
+
+
+
+.novastranka{page-break-before: always; 
+}
+.konecnovastranka{page-break-after: always;
+}
+.demo{display: flex; flex-direction: row; flex-wrap: wrap ;
+}
+
+.obrazek{margin: 10px; border: 1px solid black; display: block; margin-left: auto; margin-right: auto;
+background-image: url(sprite.gif); background-repeat: no-repeat;margin: 10px; flex:3; 
+}
+
+.obrazeknalevo{margin: 20px; border: 1px solid black; flex:5; 
+}
+.obrazeknapravo{margin: 20px; border: 1px solid black; flex:5; 
+}
+
+</style>
+</head>
+
+<body>
+<header>
+
+<h1>Zubní Ordinace<br>
+MUDr.Miroslava Doležalová
+</h1>
+</header>
+
+<nav>
+
+<div class="center">
+<ul>
+<li>
+<a href="uvod.html">Úvod</a>
+<li>
+<a href="sluzby.html">Služby</a>
+<li>
+<a href="doba.html">Ordinační doba</a>
+<li>
+<a href="misto.html">Kde se nacházíme</a>
+<li>
+<a href="kontakt.html">Kontakty</a>
+</ul>
+</div>
+				
+</nav>
+
+
+<main>
+
+<h3>
+Adresa:
+Proftova 370 Poděbrady 290 01
+</h3>
+
+<div class="demo">
+
+<img class="obrazeknapravo" srcset="https://d48-a.sdn.cz/d_48/c_img_G_I/purPqk.jpeg?fl=res,600,400,3,ffffff 800w,https://d48-a.sdn.cz/d_48/c_img_G_I/purPqk.jpeg?fl=res,600,400,3,ffffff 480w" src="https://d48-a.sdn.cz/d_48/c_img_G_I/purPqk.jpeg?fl=res,600,400,3,ffffff" alt="obrazekvlevo" width="400" height="350">
+<img class="obrazek" src="data:image/jpeg;base64,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" alt="obrazek" height="250" width="250" >
+<img class="obrazeknalevo" src="https://d48-a.sdn.cz/d_48/c_img_G_C/bcQBJfq.jpeg" alt="obrazekvpravo" width="400" height="350">
+
+</div>
+
+<br id="br">
+
+</main>
+
+
+<footer>
+
+<ul>
+<li>MUDr. Miroslava Doležalová</li>
+<li>Adresa:Proftova 370, Poděbrady 290 01</li>
+<li>telefon: 325 615 563 </li>
+<li>e-mail: mirka688@centrum.cz    </li>
+<li>V případě potíží pokud NEORDINUJEME se obraťte na: <a href="https://zubnipohotovost.cz/">zubnipohotovost.cz</a></li>
+<li>odkazy:<a href="https://www.zubarpodebrady.cz/wp-content/uploads/2015/12/IMG_6685.jpg">obrazek</a></li>
+<li><a href="https://www.firmy.cz/detail/12907918-mudr-miroslava-dolezalova-podebrady-iii.html">obrazek</a></li>
+<li>aktualizováno: 29.12.2022 </li>
+<li>Web je Studentským zápočtovým projektem</li>
+</ul>
+
+</footer>
+</body>
+
+</html>
